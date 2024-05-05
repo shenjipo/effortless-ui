@@ -89,8 +89,10 @@ import Empty from '../packages/empty/index.js';
 import Descriptions from '../packages/descriptions/index.js';
 import DescriptionsItem from '../packages/descriptions-item/index.js';
 import Result from '../packages/result/index.js';
-import locale from 'element-ui/src/locale';
-import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
+import EasyDialog from '../packages/easy-dialog/index.js';
+import CommonUtils from './utils/CommonUtils.js';
+import locale from 'effortless-ui/src/locale';
+import CollapseTransition from 'effortless-ui/src/transitions/collapse-transition';
 
 const components = [
   Pagination,
@@ -177,6 +179,7 @@ const components = [
   Descriptions,
   DescriptionsItem,
   Result,
+  EasyDialog,
   CollapseTransition
 ];
 
@@ -212,7 +215,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '2.15.14',
+  version: '1.0.0',
   locale: locale.use,
   i18n: locale.i18n,
   install,
@@ -305,5 +308,7 @@ export default {
   Empty,
   Descriptions,
   DescriptionsItem,
-  Result
+  Result,
+  EasyDialog,
+  CommonUtils
 };
